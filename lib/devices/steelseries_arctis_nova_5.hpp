@@ -26,9 +26,10 @@ namespace headsetcontrol {
  */
 class SteelSeriesArctisNova5 : public protocols::SteelSeriesNovaDevice<SteelSeriesArctisNova5> {
 public:
-    static constexpr std::array<uint16_t, 2> SUPPORTED_PRODUCT_IDS {
+    static constexpr std::array<uint16_t, 3> SUPPORTED_PRODUCT_IDS {
         0x2232, // Nova 5 Base Station
-        0x2253 // Nova 5X Base Station
+        0x2253, // Nova 5x Base Station
+        0x2264 // Nova 5X Base Station (Mine)
     };
 
     static constexpr int EQUALIZER_BANDS          = 10;
